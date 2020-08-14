@@ -53,7 +53,7 @@ var interx = [
   ["Bootstrap",19],
   ["Node.js",18],
   ["Drugs Interaction Checker",25],
-  ["Mongo.db",19],
+  ["MongoDB",19],
   ["HTML",18],
   ["CSS",19],
   ["React",18],
