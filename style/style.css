@@ -122,24 +122,53 @@ html {
 }
 
 .squares {
-	background-color: rgb(243, 211, 231);
+	/* background-color: rgb(243, 211, 231); */
 	text-align: center;
 	padding: 0;
-	width: 80%;
+	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 	margin-top: 40px;
+	color: white;
 }
 
-.project {
+.project_left, .project_right {
 	height: 250px;
-	width: 48%;
+	width: 400px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
-	margin-left: 1%;
+	margin-bottom: 4%;
 	display: inline-block;
-	background-color: #c4589c;
+}
+
+.word_cloud{
+	margin: 0;
+	padding: 0;
+}
+
+.project_left {
+
+	border: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+	border-image-slice: 1;
+	margin-right: 16px;
+
+}
+
+.project_right {
+
+	border: 3px solid;
+  border-image: linear-gradient(to right, #d53a9d 0%, #743ad5 100%);
+	border-image-slice: 1;
+	margin-left: 16px;
+
+}
+
+@media only screen and (max-width: 830px) {
+	.project_left, .project_right {
+		margin: 0;
+		margin-bottom: 4%;
+	}
 }
 
 #contact {
@@ -234,4 +263,36 @@ footer a {
 	height: 100px;
 	margin: auto;
 
+}
+
+#project_description {
+	/* background-color: rgb(93, 235, 135); */
+	text-align: center;
+	padding: 15px;
+	width: 60%;
+	/* height: 200px; */
+	margin: auto;
+	font-size:27px;
+	font-family: 'simplificasimplifica';
+	color: white;
+}
+
+#change_color {
+	border: 1px solid white;
+	width: 300px;
+	margin: auto;
+	padding: 0;
+}
+
+/* #change_color:hover {
+	font-weight: bold;
+} */
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	font-weight: bold;
 }
