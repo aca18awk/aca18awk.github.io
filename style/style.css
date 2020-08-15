@@ -6,6 +6,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+	font-family: 'Roboto Lt';
+	src: url('Roboto-Light.woff2') format('woff2'),
+			url('Roboto-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 /* <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kjpargeter - www.freepik.com</a> */
 body {
 	margin:0px;
@@ -302,6 +313,8 @@ table {
 	width: 85%;
 	margin:auto;
 	text-align: left;
+	font-family: 'Roboto Lt';
+	font-size: 20px;
 }
 
 th,td {
@@ -318,6 +331,7 @@ th,td {
   border-image: linear-gradient(to right, #d53a9d 0%, hsl(262, 65%, 53%) 100%);
 	border-image-slice: 1;
 	vertical-align: top;
+	/* font-family: 'simplificasimplifica'; */
 }
 
 .description_image {
@@ -346,7 +360,7 @@ th,td {
   opacity:0;
 	color: white;
 	font-weight: bold;
-  font-size: 23px;
+  font-size: 21px;
 	text-align: center;
 	margin:10px;
 	margin-bottom:0;
