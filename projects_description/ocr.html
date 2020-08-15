@@ -20,69 +20,100 @@
     <main>
 
         <div id="project_description">
-            <h3> Optical Character Recognition System </h3> 
+            <h3 style='text-align:center;'>Optical Character Recognition System</h3>
+            <table>    
+                <tr>
+                    <td class='field_name'>
+                        Date
+                    </td>
+                    
+                    <td width="70%">
+                        December 2019
+                    </td>
+                </tr>
 
-            As final Data Driven Computing Assignment, we were asked to create an OCR system. </br>
-            The basics of it were written by our lecturer.<br> We had to implement Dimensionality Reduction,
-            design the classifier and write Error Correction function. <br>
-            Model produced by our code coudn't be bigger than 3 MB and python script
-            had to produce the correct result in less than 2 minutes. <br><br>
+                <tr>
+                    <td class='field_name'>
+                        Description
+                    </td>
+                    
+                    <td width="70%">
+                        This is project we had to make as final Data Driven Computing Assignment. <br>
+                        The basics of the system were written by our lecturer.<br> We had to implement Dimensionality Reduction,
+                        design the classifier and write Error Correction function. <br>
+                        Model produced by our code coudn't be bigger than 3 MB and python script
+                        had to produce the correct result in less than 2 minutes. <br><br>
+                    </td>
+                </tr>
 
-            Below I put detailed description of my code and pages I tested my code on.
+                <tr>
+                    <td class='field_name'>
+                        Results
+                    </td>
+                    
+                    <td width="70%">
+                        First Class Mark (78%). <br><br>
 
-            Page 1: 93.4% correct
-            Page 2: 93.7% correct
-            Page 3: 89.5% correct
-            Page 4: 68.1% correct
-            Page 5: 51.7% correct
-            Page 6: 40.3% correct
-            <br><br>
-            Feature Extraction <br>
-            I used Principal Component Analysis to produce 10 dimensional 
-            features vectors from full train and test data. 
-            I computed 40 principal components and mean vector of train data 
-            in the process_training_data function and use them to project ‘centred’ train 
-            and test data onto the principal components in reduce_dimensions function. 
-            I made an attempt to use divergence to choose the best 10 features but it did not work well enough to keep it.
-             I was trying to pre-process features first by blurring the image of the letter by using 
-             Gaussian filter before changing it to the feature vector and by normalizing features vectors. 
-             However, these two steps increased my performance only at the beginning, 
-             so after designing better classifier and error correction I have decided not to use them. 
-             I was also trying to implement Linear Discriminant Analysis to make better use of provided labels 
-             of the train data. However, it only improved my results on the clean pages and significantly 
-             decreased correctness on the remaining ones, so I have decided to stick to the PCA. 
-            <br><br>
-            Classifier <br>
-            First, I re-used code from labs to make the nearest neighbour classifier working. 
-            However, I have realised that because we need to perform classification on the noisy data, 
-            the k-nearest neighbour classifier would be much more useful.  At the beginning I was using scipy.stats.mode 
-            function to get the label of the most common neighbour, but there was one significant problem with it 
-            - if there is more than one the most common value, this function returns only the smallest one 
-            (e.g mode[‘b’,’a’,’b’,’a’] will return ‘a’). To fix that, I used Counter.most_common function from collections. 
-            I have tried many different ‘k’ but 20 gave significantly better results than the other values. 
-            Although this classifier decreased the percentage of correctness on the first 2 cleanest pages, 
-            it boosted performance on the more noisy ones, so overall my results significantly improved.
-            <br><br>
-            Error Correction <br>
-            At the beginning I was using standard English dictionary with 50 000 words but I have realised that most of 
-            those words would never appear in the common text, so I have changed it to 2 other dictionaries – 
-            one with the most common words with apostrophes and the other one with 5000 the most frequent English words 
-            (sorted by frequency). I used first and third coordinate from the box_size of each character to extract words 
-            (consist only of alphabet and apostrophes) from array of labels. Then, if extracted word was not in the dictionaries,
-            I tried to find the best possible match. I was looking in the dictionary for the first word of the same length as 
-            the extracted text, which differs from it by 1 characters. If any match was not found and text was long enough (>7),
-            I was looking for the words at the same length which differs by 2 (and eventually 3) characters. If nothing was 
-            found, I did not correct the labels, because I did not want to make blind guesses. It improved my performance on 
-            the noisy pages by around 1% per page.
-        </div>
+                        Those are the pictures of test pages. Hover to see the results. <br>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page1.png" alt="linkedin">
+                            <div class="overlay">93.4% correct </div>
+                        </div>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page2.png" alt="linkedin">
+                            <div class="overlay">93.7% correct </div>
+                        </div>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page3.png" alt="linkedin">
+                            <div class="overlay">89.3% correct </div>
+                        </div>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page4.png" alt="linkedin">
+                            <div class="overlay">68.1% correct </div>
+                        </div>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page5.png" alt="linkedin">
+                            <div class="overlay">51.7% correct </div>
+                        </div>
+                        <div class="hover_title">
+                            <img class="description_image" src="images/page6.png" alt="linkedin">
+                            <div class="overlay">40.3% correct </div>
+                        </div>
+                    </td>
+                </tr>
 
-        <div class="content">
-
-            
-
-        </div>
-
-    
+                <tr>
+                    <td class='field_name'style='border:none;'>
+                        How it works
+                    </td>
+                    
+                    <td width="70%">
+                        Feature Extraction <br>
+                        I used Principal Component Analysis to produce 10 dimensional 
+                        features vectors from full train and test data. 
+                        I computed 40 principal components and mean vector of train data 
+                         and use them to project ‘centred’ train and test data onto the principal components.
+                        <br><br>
+                        Classifier <br>
+                        Since we need to perform classification on the noisy data, I decided to use 
+                        the k-nearest neighbour classifier.   
+                        Although this classifier decreased the percentage of correctness on the first 2 cleanest pages, 
+                        it boosted performance on the more noisy ones, so overall my results significantly improved.
+                        <br><br>
+                        Error Correction <br>
+                        Since most of the words from standard dictionary never appears in the common text, 
+                        I've decided to 2 other dictionaries – 
+                        one with the most common words with apostrophes and the other one with 5000 the most frequent English words 
+                        (sorted by frequency). <br>
+                        I extracted each word from array of labels and check if it was in dictionary. If not,
+                        I tried to find the best possible match. I was looking in the dictionary for the first word of the same length as 
+                        the extracted text, which differs from it by 1 character. If any match was not found and text was long enough (>7),
+                        I was looking for the words at the same length which differs by 2 (and eventually 3) characters. If nothing was 
+                        found, I did not correct the labels, because I did not want to make blind guesses. It improved my performance on 
+                        the noisy pages by around 1% per page.
+                    </td>
+                </tr>
+            </table>
     </main>
 
     <footer id="footer"> 

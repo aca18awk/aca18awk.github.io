@@ -32,7 +32,8 @@ var haskell = [
   ["Runtime Analysis",17],
   ["Correctness vs. Runtime",17],
   ["Cryptography",20],
-  ["Enigma", 15]
+  ["Enigma", 15],
+  ["Testing", 17]
 ]
 
 var java = [

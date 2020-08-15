@@ -265,18 +265,6 @@ footer a {
 
 }
 
-#project_description {
-	/* background-color: rgb(93, 235, 135); */
-	text-align: center;
-	padding: 15px;
-	width: 60%;
-	/* height: 200px; */
-	margin: auto;
-	font-size:27px;
-	font-family: 'simplificasimplifica';
-	color: white;
-}
-
 #change_color {
 	border: 1px solid white;
 	width: 300px;
@@ -298,4 +286,83 @@ a {
 
 a:hover {
 	font-weight: bold;
+}
+
+#project_description {
+	text-align: center;
+	padding: 15px;
+	margin: auto;
+	font-size:27px;
+	font-family: 'simplificasimplifica';
+	color: white;
+}
+
+table {
+	/* border: 1px solid white; */
+	width: 85%;
+	margin:auto;
+	text-align: left;
+}
+
+th,td {
+	/* border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%,  #d53a9d 100%);
+	border-image-slice: 1; */
+	padding: 15px;
+}
+
+.field_name {
+	width: 30%;
+	text-align:center;
+	border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #d53a9d 0%, hsl(262, 65%, 53%) 100%);
+	border-image-slice: 1;
+	vertical-align: top;
+}
+
+.description_image {
+	width: 150px;
+	margin: 10px;
+}
+
+.description_image2 {
+	height: 200px;
+	margin: 10px;
+}
+
+.description_image3 {
+	height: 250px;
+	margin: 10px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6); /* Black see-through */
+  color: #f1f1f1; 
+  width: 150px;
+  transition: .5s ease;
+  opacity:0;
+	color: white;
+	font-weight: bold;
+  font-size: 23px;
+	text-align: center;
+	margin:10px;
+	margin-bottom:0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.hover_title {
+	position:relative;
+	height: 150px;
+	margin:0;
+	padding:0;
+	float:left;
+	margin-bottom:70px;
+}
+
+.hover_title:hover .overlay {
+  opacity: 1;
 }

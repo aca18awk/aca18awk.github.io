@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/timeline.css">
+    <title>Aleksandra Kulbaka </title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Profile</a>
+        <a href="../skills.html">Skills</a>
+        <a href="../projects.html">Projects</a>
+        <a href="#footer">Contact</a>
+    </header>
+    <div style='clear:both;'></div>
+    <main>
+
+        <div id="project_description">
+            <h3 style='text-align:center;'>Academic Publication System</h3>
+            <table>    
+                <tr>
+                    <td class='field_name'>
+                        Date
+                    </td>
+                    
+                    <td width="70%">
+                        November 2019 – December 2019
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='field_name'>
+                        Description
+                    </td>
+                    
+                    <td width="70%">
+                        The objective of this project was to create a software system to meet the needs of an 
+                        publication system. 
+                        The system was implemented in Java, included a database in MySQL and a user interface in Java Swing. <br>
+                        The system supports different user roles having different access rights, 
+                        and is robust to obvious cyber-attacks.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='field_name'>
+                        Results
+                    </td>
+                    
+                    <td width="70%">
+                        First Class Mark
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='field_name'style='border:none;'>
+                        How it works
+                    </td>
+                    
+                    <td width="70%">
+                        UI: <br>
+                        We spent a lot of time trying to improve user experience. <br>
+                        We used MigLayout, which enabled us to create responsive and easy to use interfaces. 
+                        Thanks to the modularity of the code we have written, 
+                        we could easily reuse one interface many times. <br>
+                        <img class="description_image2" src="images/java1.png" alt="AppView reused in author and reviewer interface">
+                        <img class="description_image2" src="images/java2.png" alt="AppView reused in author and reviewer interface">
+                        <br><br>
+                        Next feature which improves the user experience is drop-down menu at the top of each interface. 
+                        It makes navigating through different pages much easier and faster. <br>
+                        <img class="description_image3" src="images/java3.png" alt="Searching with empty search field">
+                        <img class="description_image3" src="images/java4.png" alt="Drop-down menu bar">
+                        <div style="clear:both;"></div>                      
+                        
+                        <br><br>
+
+                        Security: <br>
+                        We made sure that our system and the sensitive data provided by the users are safe but 
+                        at the same time we did not want to decrease the user's experience from using our system
+                        by implementing too many complex security features.
+                        That is why, after many discussions, we have implemented the following features: <br><br>
+                        In order to make users’ data secure we have decided to use SHA 512 hashing algorithm with 128 bit
+                        salt to encrypt the password before it is sent to the database. 
+                        Thanks to that no sensitive data is stored in database in unchanged form. 
+                        Additionally, log in details (hashed password, salt, username) are stored in the separate table. <br><br>
+                        To make sure that getting and inserting data to the database is secure, 
+                        we used prepared statements for all database queries. 
+                        That means the query and the data are sent to the database server separately so we fully 
+                        eliminated the risk of SQL injection. Additionally, we wrote one Query function which we 
+                        reused several times for multiple prepared statements. Consequently, by avoiding repetitions
+                        we made our system more efficient. Finally, to check if all functions are secure, each 
+                        individual member of the team tested them in his own unique way.
+
+                    </td>
+                </tr>
+            </table>
+    </main>
+
+    <footer id="footer"> 
+
+            <a href="https://github.com/aca18awk"
+                target="_blank">          
+                <img class="icon" src="../images/github.png" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/aleksandra-kulbaka-121559195/"
+                target="_blank"> 
+                <img class="icon" src="../images/linkedin.png" alt="linkedin"> 
+            </a>
+            <a href="mailto:aleksandra.kulbaka1999@gmail.com">
+                <img class="icon" src="../images/email.png" alt="email">
+            </a>
+            <a href="https://www.codewars.com/users/aleksandra_wiktoria"
+                target="_blank"> 
+                <img class="icon" src="../images/codewars.png" alt="codewars">
+            </a>
+    </footer>
+</body>
+</html>
