@@ -310,6 +310,11 @@ td {
     margin: 10px;
 }
 
+.description_image4 {
+    width: 70%;
+    margin: 10px;
+}
+
 
 /* https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
 
@@ -347,7 +352,8 @@ td {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'simplificasimplifica';
 }
 
