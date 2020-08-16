@@ -1,4 +1,20 @@
-﻿<!DOCTYPE html>
+﻿<!--
+/**
+* @license
+* MyFonts Webfont Build ID 927151
+* 
+* The fonts listed in this notice are subject to the End User License
+* Agreement(s) entered into by the website owner. All other parties are 
+* explicitly restricted from using the Licensed Webfonts(s).
+* 
+* You may obtain a valid license from one of MyFonts official sites.
+* http://www.fonts.com
+* http://www.myfonts.com
+* http://www.linotype.com
+*
+*/
+-->
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -20,7 +36,7 @@
     <main>
 
         <div id="project_description">
-            <h3 style='text-align:center;'>Optical Character Recognition System</h3>
+            <h2 style='text-align:center;'>Optical Character Recognition System</h2>
             <table>    
                 <tr>
                     <td class='field_name'>
@@ -54,6 +70,7 @@
                     <td width="70%">
                         First Class Mark (78%). <br><br>
 
+                        <!-- https://www.w3schools.com/howto/howto_css_image_overlay_title.asp -->
                         Those are the pictures of test pages. Hover to see the results. <br>
                         <div class="hover_title">
                             <img class="description_image" src="images/page1.png" alt="linkedin">
@@ -88,19 +105,19 @@
                     </td>
                     
                     <td width="70%">
-                        Feature Extraction <br>
+                        <h3> Feature Extraction </h3>
                         I used Principal Component Analysis to produce 10 dimensional 
                         features vectors from full train and test data. 
                         I computed 40 principal components and mean vector of train data 
                          and use them to project ‘centred’ train and test data onto the principal components.
                         <br><br>
-                        Classifier <br>
+                        <h3> Classifier </h3>
                         Since we need to perform classification on the noisy data, I decided to use 
                         the k-nearest neighbour classifier.   
                         Although this classifier decreased the percentage of correctness on the first 2 cleanest pages, 
                         it boosted performance on the more noisy ones, so overall my results significantly improved.
                         <br><br>
-                        Error Correction <br>
+                        <h3> Error Correction </h3>
                         Since most of the words from standard dictionary never appears in the common text, 
                         I've decided to 2 other dictionaries – 
                         one with the most common words with apostrophes and the other one with 5000 the most frequent English words 

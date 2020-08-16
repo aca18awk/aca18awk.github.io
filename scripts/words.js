@@ -112,7 +112,6 @@ var hello = [
 id_list = ['js_animation', 'ml', 'haskell', 'java', 'interx', 'taxi', 'java_app', 'hello'];
 words_list = [js_animation, ml, haskell, java, interx, taxi, java_app, hello]
 
-  
 for (i = 0; i < id_list.length; i++){ 
   WordCloud(
         document.getElementById(id_list[i]), 

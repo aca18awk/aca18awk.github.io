@@ -1,382 +1,366 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3936291, 2020-08-16T05:16:18-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HaboroSerif-NorReg by insigne
+ * URL: https://www.myfonts.com/fonts/insigne/haboro-serif/normal-regular/
+ * Copyright: Copyright (c) 2016 by Jeremy Dooley. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
 
 @font-face {
     font-family: 'simplificasimplifica';
-    src: url('simplifica_typeface-webfont.woff2') format('woff2'),
-         url('simplifica_typeface-webfont.woff') format('woff');
+    src: url('simplifica_typeface-webfont.woff2') format('woff2'), url('simplifica_typeface-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto Lt';
-	src: url('Roboto-Light.woff2') format('woff2'),
-			url('Roboto-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'HaboroSerif-NorReg';
+    src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
 }
 
-
-/* <a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kjpargeter - www.freepik.com</a> */
 body {
-	margin:0px;
-	font-family: 'simplificasimplifica';
-	/* background-color:rgb(24, 10, 16); */
-	background-color: black;
-	/* background-image: url("./../images/11333.jpg");
-	background-size: 100%; */
+    margin: 0px;
+    font-family: 'HaboroSerif-NorReg';
+    background-color: black;
+    color: white;
 }
 
 header {
-	padding: 20px;
-	font-size: 22px;
-	margin-bottom: 20px;
-	float: right;
-	/* background-color: aqua; */
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    float: right;
+    font-family: 'simplificasimplifica';
 }
 
 header a {
-	text-decoration: none;
-	color: white;
-	padding-right: 30px;
+    padding-right: 30px;
 }
-
-header a:hover {
-	font-weight: bold;
-
-}
-
-#logo {
-	width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rotate {
-  animation: rotation 20s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-#description {
-	/* background-color: rgb(93, 235, 135); */
-	text-align: center;
-	padding: 15px;
-	width: 60%;
-	/* height: 200px; */
-	margin: auto;
-	font-size:30px;
-	font-family: 'simplificasimplifica';
-	color: white;
-}
-
-#beginning {
-	margin-top:200px;
-	margin-bottom:200px;
-	color: white;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-.unfold{
-	text-decoration-line: underline;
-	color:white;
-}
-
-.unfold:hover{
-	font-weight:bold;
-}
-
-#myself, #student{
-	display:none;
-}
-
-#profile{
-	display:none;
-}
-
-.content {
-	text-align: center;
-	padding: 0px;
-	width: 100%;
-	margin: auto;
-}
-
-.timeline {
-	/* background-color: rgb(93, 230, 235); */
-	color: white;
-	text-align: center;
-	padding: 0;
-	width: 100%;
-	margin: 0;
-	margin-top: 40px;
-	font-size: 25px;
-}
-
-.slider {
-	background-color: rgb(243, 211, 231);
-	text-align: center;
-	padding: 15px;
-	width: 100%;
-	margin: auto;
-	margin-top: 40px;
-}
-
-.squares {
-	/* background-color: rgb(243, 211, 231); */
-	text-align: center;
-	padding: 0;
-	width: 100%;
-	max-width: 1000px;
-	margin: auto;
-	margin-top: 40px;
-	color: white;
-}
-
-.project_left, .project_right {
-	height: 250px;
-	width: 400px;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 4%;
-	display: inline-block;
-}
-
-.word_cloud{
-	margin: 0;
-	padding: 0;
-}
-
-.project_left {
-
-	border: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-	border-image-slice: 1;
-	margin-right: 16px;
-
-}
-
-.project_right {
-
-	border: 3px solid;
-  border-image: linear-gradient(to right, #d53a9d 0%, #743ad5 100%);
-	border-image-slice: 1;
-	margin-left: 16px;
-
-}
-
-@media only screen and (max-width: 830px) {
-	.project_left, .project_right {
-		margin: 0;
-		margin-bottom: 4%;
-	}
-}
-
-#contact {
-	background-color: rgb(243, 224, 211);
-	text-align: center;
-	padding: 15px;
-	width: 50%;
-	margin: auto;
-	margin-top: 40px;	
-}
-
-footer {
-	padding: 0;
-	margin: 0;
-	padding-top: 15px;
-	text-align:center;
-	margin-top: 20px;	
-	width:100%;
-	font-size:22px;
-	margin-bottom:20px;
-	text-align:center;
-	color:rgb(148, 148, 148);
-
-}
-
-footer a {
-	text-decoration: none;
-}
-.icon {
-	height: 40px;
-	margin-left: 10px;
-}
-#skills {
-	text-align: center;
-	padding: 15px;
-	width: 80%;
-	margin: auto;
-	margin-top: 40px;	
-	color: white;
-	font-size: 25px;
-}
-
-.container {
-  width: 100%;
-	background-image: linear-gradient(to right, #4f239b 0%, #c4589c 100%);
-	height: 15px;
-	margin-bottom: 30px;
-}
-
-.skills {
-	color: white;
-	height: 15px;
-	float: right;
-	background-color: rgba(0, 0, 0, 0.466);
-}
-
-.html {width: 10%;}
-.css {width: 20%;}
-.js {width: 5%;}
-.php {width: 10%;}
-
-.skills2 {
-	width: 30%;
-	margin: 0;
-	float: left;
-	margin-left: 3%;
-	/* background-color: aqua; */
-}
-
-@media only screen and (max-width: 800px) {
-	#skills {
-		margin: 0;
-		padding: 0;
-		/* background-color: aqua; */
-		margin-left: 10%;
-	}
-
-	.skills2 {
-		/* background-color: #c4589c; */
-		width: 70%;
-		display: block;
-		margin-left: 15%;
-	}
-}
-
-
-#quotes {
-	/* background-color: rgb(209, 235, 93); */
-	text-align: center;
-	padding: 30px;
-	padding-top: 0;
-	height: 100px;
-	margin: auto;
-
-}
-
-#change_color {
-	border: 1px solid white;
-	width: 300px;
-	margin: auto;
-	padding: 0;
-	font-size: 27px;
-	text-align: center;
-	margin-top: 40px;
-}
-
-/* #change_color:hover {
-	font-weight: bold;
-} */
 
 a {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
-	font-weight: bold;
+    font-weight: bold;
+}
+
+#logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rotate {
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#description {
+    text-align: center;
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    font-size: 27px;
+    font-family: 'simplificasimplifica';
+}
+
+#beginning {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.unfold {
+    text-decoration-line: underline;
+}
+
+.unfold:hover {
+    font-weight: bold;
+}
+
+#myself,
+#student {
+    display: none;
+}
+
+#profile {
+    display: none;
+}
+
+.content {
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.timeline {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.squares {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.project_left,
+.project_right {
+    height: 250px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4%;
+    display: inline-block;
+}
+
+.project_left {
+    border: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    margin-right: 16px;
+}
+
+.project_right {
+    border: 3px solid;
+    border-image: linear-gradient(to right, #d53a9d 0%, #743ad5 100%);
+    border-image-slice: 1;
+    margin-left: 16px;
+}
+
+@media only screen and (max-width: 830px) {
+    .project_left,
+    .project_right {
+        margin: 0;
+        margin-bottom: 4%;
+    }
+}
+
+.word_cloud {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'simplificasimplifica';
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(148, 148, 148);
+}
+
+.icon {
+    height: 40px;
+    margin-left: 10px;
+}
+
+#skills {
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    background-image: linear-gradient(to right, #4f239b 0%, #c4589c 100%);
+    height: 15px;
+    margin-bottom: 30px;
+}
+
+.skills {
+    height: 15px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.html {
+    width: 10%;
+}
+
+.css {
+    width: 20%;
+}
+
+.js {
+    width: 5%;
+}
+
+.php {
+    width: 10%;
+}
+
+.skills2 {
+    width: 30%;
+    margin: 0;
+    float: left;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width: 800px) {
+    #skills {
+        margin: 0;
+        padding: 0;
+        margin-left: 10%;
+    }
+    .skills2 {
+        width: 70%;
+        display: block;
+        margin-left: 15%;
+    }
+}
+
+#change_color {
+    border: 1px solid white;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'simplificasimplifica';
 }
 
 #project_description {
-	text-align: center;
-	padding: 15px;
-	margin: auto;
-	font-size:27px;
-	font-family: 'simplificasimplifica';
-	color: white;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    font-size: 27px;
+    font-family: 'simplificasimplifica';
 }
 
 table {
-	/* border: 1px solid white; */
-	width: 85%;
-	margin:auto;
-	text-align: left;
-	font-family: 'Roboto Lt';
-	font-size: 20px;
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    font-family: 'HaboroSerif-NorReg';
+    font-style: normal;
+    font-size: 19px;
 }
 
-th,td {
-	/* border-bottom: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%,  #d53a9d 100%);
-	border-image-slice: 1; */
-	padding: 15px;
+th,
+td {
+    padding: 15px;
 }
 
 .field_name {
-	width: 30%;
-	text-align:center;
-	border-bottom: 3px solid;
-  border-image: linear-gradient(to right, #d53a9d 0%, hsl(262, 65%, 53%) 100%);
-	border-image-slice: 1;
-	vertical-align: top;
-	/* font-family: 'simplificasimplifica'; */
+    width: 30%;
+    text-align: center;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #d53a9d 0%, hsl(262, 65%, 53%) 100%);
+    border-image-slice: 1;
+    vertical-align: top;
+    font-family: 'simplificasimplifica';
+    font-size: 27px;
 }
 
 .description_image {
-	width: 150px;
-	margin: 10px;
+    width: 150px;
+    margin: 10px;
 }
 
 .description_image2 {
-	height: 200px;
-	margin: 10px;
+    height: 200px;
+    margin: 10px;
 }
 
 .description_image3 {
-	height: 250px;
-	margin: 10px;
+    height: 250px;
+    margin: 10px;
 }
 
+
+/* https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
+
 .overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.6); /* Black see-through */
-  color: #f1f1f1; 
-  width: 150px;
-  transition: .5s ease;
-  opacity:0;
-	color: white;
-	font-weight: bold;
-  font-size: 21px;
-	text-align: center;
-	margin:10px;
-	margin-bottom:0;
-	padding-top: 10px;
-	padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 150px;
+    transition: .5s ease;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .hover_title {
-	position:relative;
-	height: 150px;
-	margin:0;
-	padding:0;
-	float:left;
-	margin-bottom:70px;
+    position: relative;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-bottom: 70px;
 }
 
 .hover_title:hover .overlay {
-  opacity: 1;
+    opacity: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'simplificasimplifica';
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 0;
+    margin-bottom: 0;
 }
