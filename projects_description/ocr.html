@@ -54,10 +54,10 @@
                     </td>
                     
                     <td width="70%">
-                        This is project we had to make as final Data Driven Computing Assignment. <br>
+                        This is a project we had to make as a final Data Driven Computing Assignment. <br>
                         The basics of the system were written by our lecturer.<br> We had to implement Dimensionality Reduction,
-                        design the classifier and write Error Correction function. <br>
-                        Model produced by our code coudn't be bigger than 3 MB and python script
+                        design the classifier and write an Error Correction function. <br>
+                        Model produced by our code couldn't be bigger than 3 MB and the Python script
                         had to produce the correct result in less than 2 minutes. <br><br>
                     </td>
                 </tr>
@@ -109,7 +109,7 @@
                         I used Principal Component Analysis to produce 10 dimensional 
                         features vectors from full train and test data. 
                         I computed 40 principal components and mean vector of train data 
-                         and use them to project ‘centred’ train and test data onto the principal components.
+                         and used them to project ‘centred’ train and test data onto the principal components.
                         <br><br>
                         <h3> Classifier </h3>
                         Since we need to perform classification on the noisy data, I decided to use 
@@ -118,14 +118,14 @@
                         it boosted performance on the more noisy ones, so overall my results significantly improved.
                         <br><br>
                         <h3> Error Correction </h3>
-                        Since most of the words from standard dictionary never appears in the common text, 
-                        I've decided to 2 other dictionaries – 
+                        Since most of the words from the standard dictionary never appear in the common text, 
+                        I've decided to use 2 other dictionaries – 
                         one with the most common words with apostrophes and the other one with 5000 the most frequent English words 
                         (sorted by frequency). <br>
-                        I extracted each word from array of labels and check if it was in dictionary. If not,
+                        I extracted each word from an array of labels and checked if it was in the dictionary. If not,
                         I tried to find the best possible match. I was looking in the dictionary for the first word of the same length as 
-                        the extracted text, which differs from it by 1 character. If any match was not found and text was long enough (>7),
-                        I was looking for the words at the same length which differs by 2 (and eventually 3) characters. If nothing was 
+                        the extracted text, which differs from it by 1 character. If any match was not found and the text was long enough (>7),
+                        I was looking for the words at the same length which differ by 2 (and eventually 3) characters. If nothing was 
                         found, I did not correct the labels, because I did not want to make blind guesses. It improved my performance on 
                         the noisy pages by around 1% per page.
                     </td>
