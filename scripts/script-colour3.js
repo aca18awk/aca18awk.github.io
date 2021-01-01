@@ -84,25 +84,24 @@ function branchOut() {
 
     const centerX = mouse.x;
     const centerY = mouse.y;
-    const red = '#d53a9d';
-    const gold = '#743ad5';
-    const colors = ['#FEE747', '#FFAA38', '#FD0000', '#d53a9d',
-        '#743ad5', '#00F3FD', '#160AEE', '#44FF07'
-    ]
+    const colors = ['#d53a9d', '#ff75cd', '#9759ff', '#743ad5'];
     var par_color = '';
     // so we have 3 routes going out
     // from set of points
     // so all particles grow from the same center
     // that's why we need center
-    if (time >= 8) {
+    if (time >= 16) {
         time = 0;
     }
 
     if (time < 4) {
-        par_color = red;
-
+        par_color = colors[0];
     } else if (time < 8) {
-        par_color = gold;
+        par_color = colors[1];
+    } else if (time < 12) {
+        par_color = colors[2];
+    } else if (time < 16) {
+        par_color = colors[3];
     }
 
     for (let i = 0; i < 3; i++) {

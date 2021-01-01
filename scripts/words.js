@@ -3,7 +3,7 @@
  */
 
 var js_animation = [
-    ["Hummingbird animation", 32],
+    ["Hummingbird animation", 31],
     ["Java Script", 29],
     ["Animation", 17],
     ["Web Development", 20],
@@ -37,20 +37,22 @@ var haskell = [
 ]
 
 var java = [
-    ["Wine Browser", 32],
+    ["3D Graphics", 32],
     ["Java", 29],
+    ["OpenGL", 29],
     ["OOP", 20],
-    ["Object Oriented Programming", 16],
+    ["Diffuse and Specular Textures", 16],
     ["GUI", 17],
-    ["Abstract Classes", 17],
-    ["Inheritance", 20],
-    ["Java Collections Framework", 15],
-    ["Java Swing", 15],
-    ["Event Handling", 15]
+    ["General Lights", 21],
+    ["Inheritance", 17],
+    ["Animations", 23],
+    ["Java Collections Framework", 17],
+    ["Spotlight", 15],
+    ["Recreating a room", 24]
 ]
 
 var interx = [
-    ["Interx", 34],
+    ["Interx Web Application", 32],
     ["Bootstrap", 19],
     ["Node.js", 18],
     ["Drugs Interaction Checker", 25],
@@ -66,7 +68,7 @@ var interx = [
 ]
 
 var taxi = [
-    ["Taxi Website", 32],
+    ["Taxi Web Application", 32],
     ["Ruby", 29],
     ["SQLite", 29],
     ["Software Testing", 22],
@@ -80,6 +82,16 @@ var taxi = [
     ["Web Design", 17],
     ["Password encryption", 16],
 ]
+
+// var java_app = [
+//     [" Fire Spread CA Model", 32],
+//     ["Python", 29],
+//     ["Cellular Automata", 26],
+//     ["Fire Spread Prediction", 16],
+//     ["Algorithms Design", 25],
+//     ["Object Oriented Programming", 15],
+//     ["Bioinspired Computing", 16]
+// ]
 
 var java_app = [
     ["Academic Journal System", 32],
@@ -96,17 +108,15 @@ var java_app = [
 ]
 
 var hello = [
-    ["Say Hello", 32],
-    ["Bootstrap", 18],
+    ["Robotics Challenge", 32],
+    ["Algorithms Design", 25],
+    ["Robot Design", 25],
     ["Python", 29],
-    ["Flask", 29],
-    ["HTML", 18],
-    ["CSS", 19],
-    ["Backend", 25],
-    ["Java Script", 19],
-    ["Web Design", 17],
-    ["API", 23],
-    ["Web Application", 17],
+    ["Webots", 29],
+    ["Object Recognition", 23],
+    ["Following the Maze", 20],
+    ["Multi-Layer Control", 16],
+    ["Searching the environment", 16]
 ]
 
 id_list = ['js_animation', 'ml', 'haskell', 'java', 'interx', 'taxi', 'java_app', 'hello'];
@@ -118,7 +128,7 @@ for (i = 0; i < id_list.length; i++) {
             list: words_list[i],
             minSize: '20 px',
             color: function(word, weight) {
-                names = [32, 34]
+                names = [31, 32, 34]
                 languages = [29, 18, 19]
                 defa = [16, 17]
                 if (names.includes(weight)) {
