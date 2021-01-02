@@ -83,29 +83,31 @@ var taxi = [
     ["Password encryption", 16],
 ]
 
-// var java_app = [
-//     [" Fire Spread CA Model", 32],
-//     ["Python", 29],
-//     ["Cellular Automata", 26],
-//     ["Fire Spread Prediction", 16],
-//     ["Algorithms Design", 25],
-//     ["Object Oriented Programming", 15],
-//     ["Bioinspired Computing", 16]
-// ]
-
 var java_app = [
-    ["Academic Journal System", 32],
-    ["Java", 29],
-    ["OOP", 20],
-    ["Object Oriented Programming", 16],
-    ["GUI", 15],
-    ["UML Diagrams", 16],
-    ["Java Swing", 15],
-    ["Event Handling", 15],
-    ["SQL manipulation", 17],
-    ["MySQL", 29],
-    ["Password encryption", 15],
+    [" Fire Spread CA Model", 32],
+    ["Python", 29],
+    ["CAPyLE", 19],
+    ["Cellular Automata", 26],
+    ["Fire Spread Prediction", 16],
+    ["Algorithms Design", 25],
+    ["Object Oriented Programming", 15],
+    ["Bioinspired Computing", 16],
+    ["Research Review", 16]
 ]
+
+// var java_app = [
+//     ["Academic Journal System", 32],
+//     ["Java", 29],
+//     ["OOP", 20],
+//     ["Object Oriented Programming", 16],
+//     ["GUI", 15],
+//     ["UML Diagrams", 16],
+//     ["Java Swing", 15],
+//     ["Event Handling", 15],
+//     ["SQL manipulation", 17],
+//     ["MySQL", 29],
+//     ["Password encryption", 15],
+// ]
 
 var hello = [
     ["Robotics Challenge", 32],
