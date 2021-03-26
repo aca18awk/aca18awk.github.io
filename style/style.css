@@ -273,7 +273,8 @@ footer {
 table {
     width: 85%;
     margin: auto;
-    text-align: left;
+    padding: auto;
+    text-align: justify;
     font-family: 'HaboroSerif-NorReg';
     font-style: normal;
     font-size: 19px;
@@ -293,6 +294,31 @@ td {
     vertical-align: top;
     font-family: 'simplificasimplifica';
     font-size: 27px;
+}
+
+@media only screen and (max-width: 680px) {
+    th,
+    td {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .field_name {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #project_description {
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+    table {
+        padding-right: 1%;
+    }
 }
 
 .description_image {

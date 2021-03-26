@@ -132,3 +132,7 @@ window.addEventListener('mousemove', function() {
 
     branchOut();
 })
+
+window.addEventListener('touchmove', function() {
+    branchOut();
+})
