@@ -40,117 +40,173 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/timeline.css">
-    <link rel="icon" href="images/icon.png">
-    <title>Kulbaka Aleksandra </title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/timeline.css" />
+    <link rel="icon" href="images/icon.png" />
+    <title>Kulbaka Aleksandra</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">Profile</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="#footer">Contact</a>
+      <a href="index.html">Profile</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="#footer">Contact</a>
     </header>
-    <div style='clear:both;'></div>
+    <div style="clear: both"></div>
     <main>
+      <canvas id="canvas1"></canvas>
+      <script src="scripts/script-colour.js"></script>
+      <div id="description">
+        Here you can see some of my projects I'm the most proud of. <br />
+        To know more, click on the project you're interested in. <br />
+        To change the position of words, reload the page. <br />
+        <br />
 
-        <canvas id="canvas1"></canvas>
-        <script src='scripts/script-colour.js'></script>    
-        <div id="description">
-            Here you can see some of my projects I'm the most proud of. <br>
-            To know more, click on the project you're interested in.  <br>
-            To change the position of words, reload the page. <br> <br>
-            
-            <span style="color: #64ded5;">Title of the project</span>, 
-            <span style="color: #ff85e7;">Languages and frameworks used</span>,
-            <span style="color: #f9f7d9;">Description and</span>
-            <span style="color: #edd095;">underlying concepts</span>. <br><br>
+        <span style="color: #64ded5">Title of the project</span>,
+        <span style="color: #ff85e7">Languages and frameworks used</span>,
+        <span style="color: #f9f7d9">Description and</span>
+        <span style="color: #edd095">underlying concepts</span>. <br /><br />
+      </div>
+
+      <div class="content">
+        <div class="squares">
+          <h1>Written work:</h1>
+          <br /><br />
+          <a href="Report_Dissertation.pdf" target="_blank" download>
+            <canvas
+              id="dissertation"
+              class="project_left"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
+
+          <a href="Adaptive_Intelligence.pdf" target="_blank" download>
+            <canvas
+              id="adaptive"
+              class="project_right"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
         </div>
+        <div class="squares">
+          <h1>Projects:</h1>
+          <br /><br />
+          <a href="projects_description/ocr.html">
+            <canvas
+              id="ml"
+              class="project_left"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
 
-        <div class="content">
+          <a href="projects_description/bombe.html">
+            <canvas
+              id="haskell"
+              class="project_right"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
 
-            <div class = "squares">
-                <h1>Individual Projects: </h1>
-                <br><br>
-                <a href='projects_description/ocr.html'>
-                    <canvas id="ml" class="project_left" width="400" height="250"></canvas>
-                </a>
+          <a href="https://youtu.be/0V4sMoEh_2U" target="_blank">
+            <canvas
+              id="java"
+              class="project_left"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
 
-                <a href='projects_description/bombe.html'>
-                    <canvas id="haskell" class="project_right" width="400" height="250"></canvas>
-                </a>
+          <a href="https://youtu.be/YOrGe9qPA-o" target="_blank">
+            <canvas
+              id="java_app"
+              class="project_right"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
 
-                <a href='projects_description/hummingBird/index.html' target="_blank">
-                    <canvas id="js_animation" class = "project_left" width="400" height="250"></canvas>
-                </a>
-                
-                <a href='https://youtu.be/0V4sMoEh_2U' target="_blank">
-                    <canvas id="java" class="project_right" width="400" height="250"></canvas>
-                </a>
-            </div> 
+          <a href="https://devpost.com/software/interx" target="_blank">
+            <canvas
+              id="interx"
+              class="project_left"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
 
-            <div style="clear:both"></div>
-
-            <div class = "squares">
-                <h1>Group Projects: </h1>
-                <br><br>
-                <a href='https://youtu.be/YOrGe9qPA-o' target="_blank">
-                    <canvas id="java_app" class="project_left" width="400" height="250"></canvas>
-                </a>
-
-                <a href='https://youtu.be/4HhFS8FF-4U' target="_blank">
-                    <canvas id="taxi" class="project_right" width="400" height="250"></canvas>
-                </a>
-
-                <a href='https://devpost.com/software/interx' target="_blank">
-                    <canvas id="interx" class = "project_left" width="400" height="250"></canvas>
-                </a>
-                
-                <a href='https://youtu.be/A-zZunS6ryk' target="_blank">
-                    <canvas id="hello" class="project_right" width="400" height="250"></canvas>
-                </a>
-            </div>
-
+          <a href="https://youtu.be/A-zZunS6ryk" target="_blank">
+            <canvas
+              id="hello"
+              class="project_right"
+              width="400"
+              height="250"
+            ></canvas>
+          </a>
         </div>
+      </div>
 
-    <div id="change_color"> <a href='projects_colored.html'> Don't like the colors? Change them here. </a></div>
+      <div id="change_color">
+        <a href="projects_colored.html">
+          Don't like the colors? Change them here.
+        </a>
+      </div>
     </main>
 
-    <footer id="footer"> 
-        <script src="scripts/wordcloud2.js"></script>
-        <script src="scripts/words.js"></script>
-        Created using: <a href="https://github.com/timdream/wordcloud2.js" target="_blank"> wordcloud </a> <br>
-        Animation creared by reusing: <a href="https://www.youtube.com/watch?v=vDnsnsozSBo" target="_blank"> Franks Laboratory Tutorial </a> <br><br>
+    <footer id="footer">
+      <script src="scripts/wordcloud2.js"></script>
+      <script src="scripts/words.js"></script>
+      Created using:
+      <a href="https://github.com/timdream/wordcloud2.js" target="_blank">
+        wordcloud
+      </a>
+      <br />
+      Animation inspired by:
+      <a href="https://www.youtube.com/watch?v=vDnsnsozSBo" target="_blank">
+        Franks Laboratory Tutorial
+      </a>
+      <br /><br />
 
-                <a href="Kulbaka_cv.pdf"
-                    target="_blank" download> 
-                    <img class="icon" src="images/cv.png" alt="cv">
-                </a>
-                <a href="https://github.com/aca18awk"
-                    target="_blank">          
-                    <img class="icon" src="images/github.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/aleksandra-kulbaka-121559195/"
-                    target="_blank"> 
-                    <img class="icon" src="images/linkedin.png" alt="linkedin"> 
-                </a>
-                <a href="https://www.codewars.com/users/aleksandra_wiktoria"
-                    target="_blank"> 
-                    <img class="icon" src="images/codewars.png" alt="codewars">
-                </a>
-                <a href="mailto:aleksandra.kulbaka1999@gmail.com">
-                    <img class="icon" src="images/email.png" alt="email">
-                </a>
+      <a href="Kulbaka_cv.pdf" target="_blank" download>
+        <img class="icon" src="images/cv.png" alt="cv" />
+      </a>
+      <a href="https://github.com/aca18awk" target="_blank">
+        <img class="icon" src="images/github.png" alt="github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/aleksandra-kulbaka-121559195/"
+        target="_blank"
+      >
+        <img class="icon" src="images/linkedin.png" alt="linkedin" />
+      </a>
+      <a
+        href="https://www.codewars.com/users/aleksandra_wiktoria"
+        target="_blank"
+      >
+        <img class="icon" src="images/codewars.png" alt="codewars" />
+      </a>
+      <a href="mailto:aleksandra.kulbaka1999@gmail.com">
+        <img class="icon" src="images/email.png" alt="email" />
+      </a>
 
-        <div style="font-size: 15px; margin-top: 15px;">
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        </div>
-        </footer>
-</body>
+      <div style="font-size: 15px; margin-top: 15px">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
